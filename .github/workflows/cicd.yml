@@ -41,6 +41,7 @@ jobs:
             -Dsonar.organization=lab-test
             -Dsonar.branch.name=main  
             -Dsonar.host.url=https://sonarcloud.io
+            -x
 
       # Build Docker Image
       - name: Build Docker Image
