@@ -38,7 +38,8 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=portfolio-tracker
-            -Dsonar.organization=portfolio-tracker       
+            -Dsonar.organization=portfolio-tracker     
+            -Dsonar.branch.name=main  
             -Dsonar.host.url=https://sonarcloud.io
 
       # Build Docker Image
