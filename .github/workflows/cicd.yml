@@ -52,8 +52,8 @@ jobs:
         with:
           image-ref: ${{ secrets.DOCKER_USERNAME }}/portfolio-tracker:latest
           format: 'table'
-          exit-code: '0'
-          ignore-unfixed: true
+          exit-code: '1'                          # Fail the workflow if vulnerabilities are found
+          ignore-unfixed: true                    #ignores vulnerabilities that have no fixes yet (optional, depends on your policy).
 
       # Push to DockerHub
       - name: Log in to DockerHub

@@ -29,3 +29,4 @@ replay_pid*
 # Terraform state files
 *.tfstate
 *.tfstate.*
+*.terraform.lock.hcl
