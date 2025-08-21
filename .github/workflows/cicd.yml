@@ -28,7 +28,7 @@ jobs:
 
       # Run tests
       - name: Run Unit Tests
-        run: mvn test
+        run: mvn -f app/pom.xml test
 
       # SonarCloud Scan (or SonarQube if you have self-hosted server)
       - name: SonarCloud Scan
