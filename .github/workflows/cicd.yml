@@ -24,7 +24,9 @@ jobs:
 
       # Build with Maven
       - name: Build with Maven
-        run: mvn clean package -DskipTests
+        run: |
+         cd app
+         mvn clean package -DskipTests
 
       # Run tests
       - name: Run Unit Tests
