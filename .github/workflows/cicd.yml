@@ -37,8 +37,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=lab-test-portfolio-tracker
-            -Dsonar.organization=lab-test
+            -Dsonar.projectKey=portfolio-tracker
+            -Dsonar.organization=lab-test-portfolio-tracker
             -Dsonar.branch.name=main  
             -Dsonar.host.url=https://sonarcloud.io
             -X
