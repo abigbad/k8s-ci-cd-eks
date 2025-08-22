@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-1"                #CHANGE TO YOUR PREFERED REGION
 }
 
 # Data source for availability zones

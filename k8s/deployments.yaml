@@ -16,7 +16,7 @@ spec:
       serviceAccountName: app-sa
       containers:
       - name: portfolio-tracker
-        image: lincontech/portfolio-tracker:latest
+        image: lincontech/portfolio-tracker:latest           #CHANGE TO YOUR OWN <Ddocker_username>/portfolio-tracker:latest
         ports:
         - containerPort: 8080
         securityContext:
