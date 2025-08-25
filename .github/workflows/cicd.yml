@@ -37,8 +37,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=portfolio-tracker           
-            -Dsonar.organization=portfolio-tracker
+            -Dsonar.projectKey=portfolio-tracker2           
+            -Dsonar.organization=portfolio-tracker2
             -Dsonar.branch.name=main  
             -Dsonar.host.url=https://sonarcloud.io
 
@@ -80,11 +80,11 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1           #CHANGE TO YOUR REGION
+          aws-region: eu-central-1           #CHANGE TO YOUR REGION
 
       # Update kubeconfig for EKS
       - name: Update kubeconfig
-        run: aws eks update-kubeconfig --region us-east-1 --name portfoliotracker-eks
+        run: aws eks update-kubeconfig --region eu-central-1 --name portfoliotracker-eks
 
       # Deploy to EKS
       - name: Deploy to Kubernetes

@@ -16,7 +16,7 @@ output "cluster_certificate_authority_data" {
 
 output "cluster_region" {
   description = "AWS region"
-  value       = "us-east-1"
+  value       = "eu-central-1"
 }
 
 output "cluster_name" {
